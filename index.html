@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beyond the Nodes</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style id="explore-white">
+/* Explore the Lymphatic System: pure white section (scoped to #explore only) */
+#explore{background:#FFFFFF;color:#123E42}
+#explore h2,#explore h3,#explore p,#explore dd{color:#123E42}
+#explore a{color:#267A73}
+#explore :focus-visible{outline-color:#123E42}
+#explore .explore{justify-items:center}
+#explore .explore>#panel{justify-self:stretch}
+#explore .explore svg#body{width:min(100%,22rem,calc(70vh*240/430));max-width:100%;max-height:none;height:auto;margin-inline:auto;display:block;overflow:hidden;background:transparent;border-radius:16px;box-shadow:0 10px 30px #123E4226,0 0 0 1px #123E421f}
+#explore #body .hs.on .v{stroke:#E9A68D}
+#explore #panel{background:#FFFFFF;color:#123E42;border:1px solid #123E4233;border-inline-start:6px solid #267A73;box-shadow:0 4px 18px #123E421a}
+#explore #panel dt{color:#267A73}
+#explore #panel .sec{background:transparent;color:#123E42;border:2px solid #267A73}
+#explore #panel .sec:hover:not(:disabled){background:#267A73;color:#FFFFFF;filter:none}
+#explore #panel .sec:disabled{opacity:1;color:#123E42a6;border-color:#267A7366}
+</style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<b>Beyond the Nodes</b>
+<nav id="nav" aria-label="Main"></nav>
+<button id="lang" type="button"></button>
+</header>
+<main>
+<section class="hero" id="home"><svg id="net" viewBox="0 0 620 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+<div><h1>Beyond the Nodes</h1><p data-t="sub"></p><div class="row"><a class="btn" href="#explore" data-t="cta1"></a><a class="btn alt" href="#lymphoma" data-t="cta2"></a></div></div></section>
+<section id="intro"><h2 data-t="introH"></h2><p data-t="introP"></p><div class="grid" id="path"></div><div class="warn" role="note"><span data-t="disc"></span></div></section>
+<section class="dark" id="explore"><div><h2 data-t="exploreH"></h2><p data-t="exploreP"></p>
+<div class="explore"><svg id="body" viewBox="0 0 200 300" role="group"></svg><div id="panel" aria-live="polite"></div></div>
+<p data-t="schem"></p></div></section>
+<section id="lymphoma"><h2 data-t="lymH"></h2><div id="lymBody"></div></section>
+<section id="symptoms"><h2 data-t="symH"></h2><p data-t="symP"></p><div class="grid" id="symGrid"></div><div class="warn" role="alert"><span data-t="urgent"></span></div></section>
+<section id="diag"><h2 data-t="diagH"></h2><p data-t="diagP"></p><ol class="tl" id="tl"></ol></section>
+<section id="treat"><h2 data-t="treatH"></h2><p data-t="treatP"></p><div class="grid" id="trGrid"></div><h3 style="margin-top:2rem" data-t="liveH"></h3><ul id="live"></ul></section>
+<section id="myths"><h2 data-t="mythH"></h2><p data-t="mythP"></p><div class="grid" id="mythGrid"></div></section>
+<section id="gloss"><h2 data-t="glossH"></h2><label for="q" class="sr" data-t="search"></label><input type="search" id="q"><div class="grid" id="glGrid" style="margin-top:1rem" aria-live="polite"></div></section>
+<section id="faq"><h2 data-t="faqH"></h2><div id="faqList"></div></section>
+<section id="ask"><h2 data-t="askH"></h2><p class="noprint" data-t="askP"></p><div id="chkList"></div><p class="pnote" data-t="prep"></p><div class="row noprint"><button id="printBtn" type="button" data-t="print"></button></div></section>
+<section id="refs"><h2 data-t="refsH"></h2><p data-t="refsP"></p><ul id="refList"></ul><div class="warn"><span data-t="disc"></span></div></section>
+</main>
+<footer><p data-t="disc"></p></footer>
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>
